@@ -12,7 +12,18 @@
 		E26A63112170B73E00AA0AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26A630F2170B73E00AA0AE2 /* Main.storyboard */; };
 		E26A63132170B74000AA0AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26A63122170B74000AA0AE2 /* Assets.xcassets */; };
 		E26A63162170B74000AA0AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26A63142170B74000AA0AE2 /* LaunchScreen.storyboard */; };
+		E26A63242170B86F00AA0AE2 /* MultiplicationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A63232170B86F00AA0AE2 /* MultiplicationsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E26A63262170B86F00AA0AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26A63002170B73D00AA0AE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E26A63072170B73E00AA0AE2;
+			remoteInfo = Multiplications;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E26A63082170B73E00AA0AE2 /* Multiplications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplications.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		E26A63122170B74000AA0AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26A63152170B74000AA0AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E26A63172170B74000AA0AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26A63212170B86F00AA0AE2 /* MultiplicationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiplicationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26A63232170B86F00AA0AE2 /* MultiplicationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationsTests.swift; sourceTree = "<group>"; };
+		E26A63252170B86F00AA0AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E26A63052170B73E00AA0AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26A631E2170B86F00AA0AE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				E26A630A2170B73E00AA0AE2 /* Multiplications */,
+				E26A63222170B86F00AA0AE2 /* MultiplicationsTests */,
 				E26A63092170B73E00AA0AE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				E26A63082170B73E00AA0AE2 /* Multiplications.app */,
+				E26A63212170B86F00AA0AE2 /* MultiplicationsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				E26A63172170B74000AA0AE2 /* Info.plist */,
 			);
 			path = Multiplications;
+			sourceTree = "<group>";
+		};
+		E26A63222170B86F00AA0AE2 /* MultiplicationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E26A63232170B86F00AA0AE2 /* MultiplicationsTests.swift */,
+				E26A63252170B86F00AA0AE2 /* Info.plist */,
+			);
+			path = MultiplicationsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = E26A63082170B73E00AA0AE2 /* Multiplications.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E26A63202170B86F00AA0AE2 /* MultiplicationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26A63282170B86F00AA0AE2 /* Build configuration list for PBXNativeTarget "MultiplicationsTests" */;
+			buildPhases = (
+				E26A631D2170B86F00AA0AE2 /* Sources */,
+				E26A631E2170B86F00AA0AE2 /* Frameworks */,
+				E26A631F2170B86F00AA0AE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E26A63272170B86F00AA0AE2 /* PBXTargetDependency */,
+			);
+			name = MultiplicationsTests;
+			productName = MultiplicationsTests;
+			productReference = E26A63212170B86F00AA0AE2 /* MultiplicationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					E26A63072170B73E00AA0AE2 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					E26A63202170B86F00AA0AE2 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E26A63072170B73E00AA0AE2;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				E26A63072170B73E00AA0AE2 /* Multiplications */,
+				E26A63202170B86F00AA0AE2 /* MultiplicationsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E26A631F2170B86F00AA0AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E26A631D2170B86F00AA0AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26A63242170B86F00AA0AE2 /* MultiplicationsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E26A63272170B86F00AA0AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E26A63072170B73E00AA0AE2 /* Multiplications */;
+			targetProxy = E26A63262170B86F00AA0AE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E26A630F2170B73E00AA0AE2 /* Main.storyboard */ = {
@@ -312,6 +390,44 @@
 			};
 			name = Release;
 		};
+		E26A63292170B86F00AA0AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MultiplicationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Perform.MultiplicationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multiplications.app/Multiplications";
+			};
+			name = Debug;
+		};
+		E26A632A2170B86F00AA0AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MultiplicationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Perform.MultiplicationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multiplications.app/Multiplications";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +445,15 @@
 			buildConfigurations = (
 				E26A631B2170B74000AA0AE2 /* Debug */,
 				E26A631C2170B74000AA0AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26A63282170B86F00AA0AE2 /* Build configuration list for PBXNativeTarget "MultiplicationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26A63292170B86F00AA0AE2 /* Debug */,
+				E26A632A2170B86F00AA0AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
