@@ -13,12 +13,12 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var wynik = GeneratorLiczb.generujTabliceMnozenia(liczbaKolumn: 10, liczbaWierszy: 5)
-        wypiszNaKonsoli(wartosci: wynik)
-        wynik = GeneratorLiczb.generujLiczby(liczbaKolumn: 8, liczbaWierszy: 6)
-        wypiszNaKonsoli(wartosci: wynik)
-        wynik = GeneratorLiczb.generujLiczby(liczbaKolumn: 9, liczbaWierszy: 7)
-        wypiszNaKonsoli(wartosci: wynik)
+//        var wynik = GeneratorLiczb.generujTabliceMnozenia(liczbaKolumn: 10, liczbaWierszy: 5)
+//        wypiszNaKonsoli(wartosci: wynik)
+//        wynik = GeneratorLiczb.generujLiczby(liczbaKolumn: 8, liczbaWierszy: 6)
+//        wypiszNaKonsoli(wartosci: wynik)
+//        wynik = GeneratorLiczb.generujLiczby(liczbaKolumn: 9, liczbaWierszy: 7)
+//        wypiszNaKonsoli(wartosci: wynik)
     }
 
     private func wypiszNaKonsoli(wartosci: [[Int]]) {
