@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B560444D21E6509600105D14 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444C21E6509600105D14 /* FizzBuzzTests.swift */; };
+		B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444E21E6509F00105D14 /* FizzBuzz.swift */; };
 		E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */; };
 		E26A630E2170B73E00AA0AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A630D2170B73E00AA0AE2 /* ViewController.swift */; };
 		E26A63112170B73E00AA0AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26A630F2170B73E00AA0AE2 /* Main.storyboard */; };
 		E26A63132170B74000AA0AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26A63122170B74000AA0AE2 /* Assets.xcassets */; };
 		E26A63162170B74000AA0AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26A63142170B74000AA0AE2 /* LaunchScreen.storyboard */; };
-		E26A63242170B86F00AA0AE2 /* MultiplicationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A63232170B86F00AA0AE2 /* MultiplicationsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B560444C21E6509600105D14 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
+		B560444E21E6509F00105D14 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 		E26A63082170B73E00AA0AE2 /* Multiplications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26A630D2170B73E00AA0AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +37,6 @@
 		E26A63152170B74000AA0AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E26A63172170B74000AA0AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26A63212170B86F00AA0AE2 /* MultiplicationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiplicationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E26A63232170B86F00AA0AE2 /* MultiplicationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationsTests.swift; sourceTree = "<group>"; };
 		E26A63252170B86F00AA0AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */,
+				B560444E21E6509F00105D14 /* FizzBuzz.swift */,
 				E26A630D2170B73E00AA0AE2 /* ViewController.swift */,
 				E26A630F2170B73E00AA0AE2 /* Main.storyboard */,
 				E26A63122170B74000AA0AE2 /* Assets.xcassets */,
@@ -90,7 +93,7 @@
 		E26A63222170B86F00AA0AE2 /* MultiplicationsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E26A63232170B86F00AA0AE2 /* MultiplicationsTests.swift */,
+				B560444C21E6509600105D14 /* FizzBuzzTests.swift */,
 				E26A63252170B86F00AA0AE2 /* Info.plist */,
 			);
 			path = MultiplicationsTests;
@@ -199,6 +202,7 @@
 			files = (
 				E26A630E2170B73E00AA0AE2 /* ViewController.swift in Sources */,
 				E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */,
+				B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26A63242170B86F00AA0AE2 /* MultiplicationsTests.swift in Sources */,
+				B560444D21E6509600105D14 /* FizzBuzzTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
