@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		B560444D21E6509600105D14 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444C21E6509600105D14 /* FizzBuzzTests.swift */; };
 		B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444E21E6509F00105D14 /* FizzBuzz.swift */; };
+		B5677940220D7CF100FB49FD /* NextPrimeValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */; };
+		B5677942220D7D3E00FB49FD /* NextPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5677941220D7D3E00FB49FD /* NextPrime.swift */; };
+		B5677944220D7F1800FB49FD /* EnumsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5677943220D7F1800FB49FD /* EnumsWrapper.swift */; };
+		B5677946220D800600FB49FD /* EnumsWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5677945220D800600FB49FD /* EnumsWrapperTests.swift */; };
 		E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */; };
 		E26A630E2170B73E00AA0AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A630D2170B73E00AA0AE2 /* ViewController.swift */; };
 		E26A63112170B73E00AA0AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26A630F2170B73E00AA0AE2 /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 /* Begin PBXFileReference section */
 		B560444C21E6509600105D14 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		B560444E21E6509F00105D14 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
+		B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPrimeValueTests.swift; sourceTree = "<group>"; };
+		B5677941220D7D3E00FB49FD /* NextPrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPrime.swift; sourceTree = "<group>"; };
+		B5677943220D7F1800FB49FD /* EnumsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsWrapper.swift; sourceTree = "<group>"; };
+		B5677945220D800600FB49FD /* EnumsWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsWrapperTests.swift; sourceTree = "<group>"; };
 		E26A63082170B73E00AA0AE2 /* Multiplications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26A630D2170B73E00AA0AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */,
+				B5677943220D7F1800FB49FD /* EnumsWrapper.swift */,
 				B560444E21E6509F00105D14 /* FizzBuzz.swift */,
+				B5677941220D7D3E00FB49FD /* NextPrime.swift */,
 				E26A630D2170B73E00AA0AE2 /* ViewController.swift */,
 				E26A630F2170B73E00AA0AE2 /* Main.storyboard */,
 				E26A63122170B74000AA0AE2 /* Assets.xcassets */,
@@ -93,7 +103,9 @@
 		E26A63222170B86F00AA0AE2 /* MultiplicationsTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5677945220D800600FB49FD /* EnumsWrapperTests.swift */,
 				B560444C21E6509600105D14 /* FizzBuzzTests.swift */,
+				B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */,
 				E26A63252170B86F00AA0AE2 /* Info.plist */,
 			);
 			path = MultiplicationsTests;
@@ -202,6 +214,8 @@
 			files = (
 				E26A630E2170B73E00AA0AE2 /* ViewController.swift in Sources */,
 				E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */,
+				B5677944220D7F1800FB49FD /* EnumsWrapper.swift in Sources */,
+				B5677942220D7D3E00FB49FD /* NextPrime.swift in Sources */,
 				B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5677940220D7CF100FB49FD /* NextPrimeValueTests.swift in Sources */,
 				B560444D21E6509600105D14 /* FizzBuzzTests.swift in Sources */,
+				B5677946220D800600FB49FD /* EnumsWrapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
