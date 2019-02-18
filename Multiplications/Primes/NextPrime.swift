@@ -6,7 +6,7 @@
 
 import Foundation
 
-final class PrimeGenerator {
+final class NextPrime {
     func isPrime(value: Int) -> Bool {
         if value % 2 == 0 {
             return false

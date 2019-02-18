@@ -14,4 +14,26 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    enum AccessibilityID: Identifiable {
+        case favouriteCell(String)
+        case favouriteReminderButton(String)
+    }
+
+}
+
+public protocol Identifiable {
+    var identifier: String { get }
+
+    static var selectedValue: String { get }
+}
+
+extension Identifiable {
+
+    public var identifier: String {
+        return String(describing: self)
+    }
+
+    public static var selectedValue: String {
+        return "selected"
+    }
 }

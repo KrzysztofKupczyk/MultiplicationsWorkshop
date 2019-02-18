@@ -17,7 +17,7 @@ final class NextPrimeValueTests: XCTestCase {
     }
 
     func testNextFirst10Values() {
-        let generator = PrimeGenerator()
+        let generator = NextPrime()
 
         XCTAssertEqual(generator.nextPrime(for: 0), 2)
         XCTAssertEqual(generator.nextPrime(for: 1), 2)
@@ -33,7 +33,7 @@ final class NextPrimeValueTests: XCTestCase {
     }
 
     func testIsPrime() {
-        let generator = PrimeGenerator()
+        let generator = NextPrime()
 
         XCTAssertTrue(generator.isPrime(value: 2))
         XCTAssertTrue(generator.isPrime(value: 3))
