@@ -13,9 +13,9 @@ extension NextPrime {
         let maximumValue = Int(sqrt(doubleValue))
         for potentialDivider in 2...maximumValue {
             if value % potentialDivider == 0 {
-                return true
+                return false
             }
         }
-        return false
+        return true
     }
 }

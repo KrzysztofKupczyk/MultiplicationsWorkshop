@@ -17,7 +17,7 @@
 		B567794A220D822C00FB49FD /* StringMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5677949220D822C00FB49FD /* StringMatcherTests.swift */; };
 		B567794C220D84F800FB49FD /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567794B220D84F800FB49FD /* Containers.swift */; };
 		B567794E220D857C00FB49FD /* ContainersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567794D220D857C00FB49FD /* ContainersTests.swift */; };
-		B5B7886B221AB66E00421F66 /* NextPrime+Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7886A221AB66E00421F66 /* NextPrime+Prime.swift */; };
+		B5B7886B221AB66E00421F66 /* NextPrime+PrimeChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7886A221AB66E00421F66 /* NextPrime+PrimeChecker.swift */; };
 		E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */; };
 		E26A630E2170B73E00AA0AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A630D2170B73E00AA0AE2 /* ViewController.swift */; };
 		E26A63112170B73E00AA0AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26A630F2170B73E00AA0AE2 /* Main.storyboard */; };
@@ -46,7 +46,7 @@
 		B5677949220D822C00FB49FD /* StringMatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMatcherTests.swift; sourceTree = "<group>"; };
 		B567794B220D84F800FB49FD /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Containers.swift; path = Assets.xcassets/Containers.swift; sourceTree = "<group>"; };
 		B567794D220D857C00FB49FD /* ContainersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainersTests.swift; sourceTree = "<group>"; };
-		B5B7886A221AB66E00421F66 /* NextPrime+Prime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NextPrime+Prime.swift"; sourceTree = "<group>"; };
+		B5B7886A221AB66E00421F66 /* NextPrime+PrimeChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NextPrime+PrimeChecker.swift"; sourceTree = "<group>"; };
 		E26A63082170B73E00AA0AE2 /* Multiplications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26A630D2170B73E00AA0AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B5677941220D7D3E00FB49FD /* NextPrime.swift */,
-				B5B7886A221AB66E00421F66 /* NextPrime+Prime.swift */,
+				B5B7886A221AB66E00421F66 /* NextPrime+PrimeChecker.swift */,
 			);
 			path = Primes;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B7886B221AB66E00421F66 /* NextPrime+Prime.swift in Sources */,
+				B5B7886B221AB66E00421F66 /* NextPrime+PrimeChecker.swift in Sources */,
 				E26A630E2170B73E00AA0AE2 /* ViewController.swift in Sources */,
 				E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */,
 				B5677944220D7F1800FB49FD /* EnumsWrapper.swift in Sources */,
