@@ -17,23 +17,11 @@ enum GREYContentEdge: String {
 
 final class StringMatcher {
     static func contentEdge(from string: String) -> GREYContentEdge? {
-        let lowercasedString = string.lowercased()
-        switch lowercasedString {
-        case "top", "up":
-            return GREYContentEdge.top
-        case "bottom", "down":
-            return GREYContentEdge.bottom
-        case "left":
-            return GREYContentEdge.left
-        case "right":
-            return GREYContentEdge.right
-        default:
-            return nil
-        }
+        return GREYContentEdge.top
     }
 
     static func checkIf(string: String, containsContentEdge contentEdge: GREYContentEdge) -> Bool {
-        return string.contains(contentEdge.rawValue)
+        return false
         
     }
 

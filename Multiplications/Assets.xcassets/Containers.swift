@@ -7,12 +7,10 @@
 import Foundation
 
 final class Containers {
-    var savedValue: String?
     func save(value: String) {
-        savedValue = value
     }
 
     func checkIfValueIsSaved(value: String) -> Bool {
-        return savedValue == value
+        return false
     }
 }
