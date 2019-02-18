@@ -20,7 +20,12 @@ public enum TileType: String, CaseIterable {
 final class EnumsWrapper {
 
     func isPlayable(tileType: TileType) -> Bool {
-        return false
+        switch tileType {
+        case .upcoming, .navigation:
+            return false
+        default:
+            return true
+        }
     }
 
 }

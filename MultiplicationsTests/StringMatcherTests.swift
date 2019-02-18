@@ -59,4 +59,27 @@ class StringMatcherTests: XCTestCase {
             containsContentEdge: GREYContentEdge.left))
     }
 
+    func testContainingInsensitiveString() {
+        XCTAssertTrue(StringMatcher.checkIf(
+            string: "to jEst BottoM",
+            containsContentEdge: GREYContentEdge.bottom))
+        XCTAssertFalse(StringMatcher.checkIf(
+            string: "to jest dd",
+            containsContentEdge: GREYContentEdge.bottom))
+
+        XCTAssertTrue(StringMatcher.checkIf(
+            string: "to jest Top",
+            containsContentEdge: GREYContentEdge.top))
+        XCTAssertFalse(StringMatcher.checkIf(
+            string: "to  cos jest ddd",
+            containsContentEdge: GREYContentEdge.top))
+
+        XCTAssertTrue(StringMatcher.checkIf(
+            string: "to jest LEFT",
+            containsContentEdge: GREYContentEdge.left))
+        XCTAssertFalse(StringMatcher.checkIf(
+            string: "to jest ddd",
+            containsContentEdge: GREYContentEdge.left))
+    }
+
 }

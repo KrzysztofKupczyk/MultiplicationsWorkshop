@@ -8,6 +8,17 @@ import Foundation
 
 final class FizzBuzz {
     func makeFizzBuzz(for turn: Int) -> String {
-        return "\(turn)"
+
+        switch turn {
+        case let n where n % 3 == 0 && n % 5 == 0:
+            return "Fizz Buzz"
+        case let n where n % 3 == 0:
+            return "Fizz"
+        case let n where n % 5 == 0:
+            return "Buzz"
+        default:
+            return "\(turn)"
+
+        }
     }
 }

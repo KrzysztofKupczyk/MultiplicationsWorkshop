@@ -7,10 +7,14 @@
 import Foundation
 
 final class Containers {
+    var data:[String] = []
+
     func save(value: String) {
+        data.append(value)
     }
 
     func checkIfValueIsSaved(value: String) -> Bool {
-        return false
-    }
+
+       return data.contains(value)
+}
 }
