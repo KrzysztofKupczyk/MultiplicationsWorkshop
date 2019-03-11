@@ -11,28 +11,39 @@ final class WorkerInfo {
     enum Position {
         case qaDeveloper
         case iosDeveloper
+        case tvosDeveloper
         case scrumHamster
         case designer
         case productOwner
     }
 
-    let firstName: String?
+    let firstName: String
     let lastName: String?
     let birthDate: Date?
     let workFloor: UInt8
-    let position: Position?
-
-    init () {
-        firstName = nil
-        lastName = nil
-        birthDate = nil
-        workFloor = 6
-        position = nil
+    let position: Position
+    
+    init (firstName:String, lastName:String?, birthDate:Date, workFloor: UInt8, position:Position) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.birthDate = birthDate
+        self.workFloor = workFloor
+        self.position = position
     }
 
     var fullName: String? {
-        return nil
+        
+        guard let lastName = lastName else {
+            return firstName
+        }
+        return firstName + " " + lastName
     }
+//        if let lastName = lastName {
+//            return firstName + " " + lastName
+//        }
+//        return firstName
+//    }
+    
 
     var needAccessToRepository: Bool {
         return false
