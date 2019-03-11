@@ -10,6 +10,9 @@
 		B538AFDE2236699B008A6F94 /* NextPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFDC2236699B008A6F94 /* NextPrime.swift */; };
 		B538AFDF2236699B008A6F94 /* NextPrime+PrimeChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFDD2236699B008A6F94 /* NextPrime+PrimeChecker.swift */; };
 		B538AFE222366C0A008A6F94 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE122366C0A008A6F94 /* Containers.swift */; };
+		B538AFE422366D46008A6F94 /* WorkerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE322366D46008A6F94 /* WorkerInfo.swift */; };
+		B538AFE722366EDD008A6F94 /* WorkerInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE622366EDD008A6F94 /* WorkerInfoTests.swift */; };
+		B538AFEA22366FE5008A6F94 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE822366F9D008A6F94 /* Team.swift */; };
 		B560444D21E6509600105D14 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444C21E6509600105D14 /* FizzBuzzTests.swift */; };
 		B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444E21E6509F00105D14 /* FizzBuzz.swift */; };
 		B5677940220D7CF100FB49FD /* NextPrimeValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */; };
@@ -39,6 +42,9 @@
 		B538AFDC2236699B008A6F94 /* NextPrime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextPrime.swift; sourceTree = "<group>"; };
 		B538AFDD2236699B008A6F94 /* NextPrime+PrimeChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextPrime+PrimeChecker.swift"; sourceTree = "<group>"; };
 		B538AFE122366C0A008A6F94 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
+		B538AFE322366D46008A6F94 /* WorkerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerInfo.swift; sourceTree = "<group>"; };
+		B538AFE622366EDD008A6F94 /* WorkerInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerInfoTests.swift; sourceTree = "<group>"; };
+		B538AFE822366F9D008A6F94 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		B560444C21E6509600105D14 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		B560444E21E6509F00105D14 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 		B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPrimeValueTests.swift; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 		B538AFD922366877008A6F94 /* Lesson1_2 */ = {
 			isa = PBXGroup;
 			children = (
+				B538AFE122366C0A008A6F94 /* Containers.swift */,
 				B538AFDB2236699B008A6F94 /* Primes */,
 				B5677943220D7F1800FB49FD /* EnumsWrapper.swift */,
 				B5677947220D819F00FB49FD /* StringMatcher.swift */,
@@ -122,7 +129,16 @@
 		B538AFE022366BF5008A6F94 /* Lesson3 */ = {
 			isa = PBXGroup;
 			children = (
-				B538AFE122366C0A008A6F94 /* Containers.swift */,
+				B538AFE322366D46008A6F94 /* WorkerInfo.swift */,
+				B538AFE822366F9D008A6F94 /* Team.swift */,
+			);
+			path = Lesson3;
+			sourceTree = "<group>";
+		};
+		B538AFE522366ECE008A6F94 /* Lesson3 */ = {
+			isa = PBXGroup;
+			children = (
+				B538AFE622366EDD008A6F94 /* WorkerInfoTests.swift */,
 			);
 			path = Lesson3;
 			sourceTree = "<group>";
@@ -161,6 +177,7 @@
 			children = (
 				B5677945220D800600FB49FD /* EnumsWrapperTests.swift */,
 				B538AFDA22366885008A6F94 /* Lesson1_2 */,
+				B538AFE522366ECE008A6F94 /* Lesson3 */,
 				E26A63252170B86F00AA0AE2 /* Info.plist */,
 			);
 			path = MultiplicationsTests;
@@ -274,6 +291,8 @@
 				E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */,
 				B5677944220D7F1800FB49FD /* EnumsWrapper.swift in Sources */,
 				B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */,
+				B538AFE422366D46008A6F94 /* WorkerInfo.swift in Sources */,
+				B538AFEA22366FE5008A6F94 /* Team.swift in Sources */,
 				B5677948220D819F00FB49FD /* StringMatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5677940220D7CF100FB49FD /* NextPrimeValueTests.swift in Sources */,
+				B538AFE722366EDD008A6F94 /* WorkerInfoTests.swift in Sources */,
 				B567794A220D822C00FB49FD /* StringMatcherTests.swift in Sources */,
 				B560444D21E6509600105D14 /* FizzBuzzTests.swift in Sources */,
 				B5677946220D800600FB49FD /* EnumsWrapperTests.swift in Sources */,
