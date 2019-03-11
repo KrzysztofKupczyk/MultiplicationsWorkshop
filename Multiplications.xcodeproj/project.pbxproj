@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B538AFDE2236699B008A6F94 /* NextPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFDC2236699B008A6F94 /* NextPrime.swift */; };
+		B538AFDF2236699B008A6F94 /* NextPrime+PrimeChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFDD2236699B008A6F94 /* NextPrime+PrimeChecker.swift */; };
+		B538AFE222366C0A008A6F94 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE122366C0A008A6F94 /* Containers.swift */; };
 		B560444D21E6509600105D14 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444C21E6509600105D14 /* FizzBuzzTests.swift */; };
 		B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444E21E6509F00105D14 /* FizzBuzz.swift */; };
 		B5677940220D7CF100FB49FD /* NextPrimeValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */; };
-		B5677942220D7D3E00FB49FD /* NextPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5677941220D7D3E00FB49FD /* NextPrime.swift */; };
 		B5677944220D7F1800FB49FD /* EnumsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5677943220D7F1800FB49FD /* EnumsWrapper.swift */; };
 		B5677946220D800600FB49FD /* EnumsWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5677945220D800600FB49FD /* EnumsWrapperTests.swift */; };
 		B5677948220D819F00FB49FD /* StringMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5677947220D819F00FB49FD /* StringMatcher.swift */; };
 		B567794A220D822C00FB49FD /* StringMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5677949220D822C00FB49FD /* StringMatcherTests.swift */; };
-		B567794C220D84F800FB49FD /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567794B220D84F800FB49FD /* Containers.swift */; };
 		B567794E220D857C00FB49FD /* ContainersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567794D220D857C00FB49FD /* ContainersTests.swift */; };
-		B5B7886B221AB66E00421F66 /* NextPrime+PrimeChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7886A221AB66E00421F66 /* NextPrime+PrimeChecker.swift */; };
 		E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */; };
 		E26A630E2170B73E00AA0AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A630D2170B73E00AA0AE2 /* ViewController.swift */; };
 		E26A63112170B73E00AA0AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26A630F2170B73E00AA0AE2 /* Main.storyboard */; };
@@ -36,17 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B538AFDC2236699B008A6F94 /* NextPrime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextPrime.swift; sourceTree = "<group>"; };
+		B538AFDD2236699B008A6F94 /* NextPrime+PrimeChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextPrime+PrimeChecker.swift"; sourceTree = "<group>"; };
+		B538AFE122366C0A008A6F94 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
 		B560444C21E6509600105D14 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		B560444E21E6509F00105D14 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 		B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPrimeValueTests.swift; sourceTree = "<group>"; };
-		B5677941220D7D3E00FB49FD /* NextPrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPrime.swift; sourceTree = "<group>"; };
 		B5677943220D7F1800FB49FD /* EnumsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsWrapper.swift; sourceTree = "<group>"; };
 		B5677945220D800600FB49FD /* EnumsWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsWrapperTests.swift; sourceTree = "<group>"; };
 		B5677947220D819F00FB49FD /* StringMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMatcher.swift; sourceTree = "<group>"; };
 		B5677949220D822C00FB49FD /* StringMatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMatcherTests.swift; sourceTree = "<group>"; };
-		B567794B220D84F800FB49FD /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Containers.swift; path = Assets.xcassets/Containers.swift; sourceTree = "<group>"; };
 		B567794D220D857C00FB49FD /* ContainersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainersTests.swift; sourceTree = "<group>"; };
-		B5B7886A221AB66E00421F66 /* NextPrime+PrimeChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NextPrime+PrimeChecker.swift"; sourceTree = "<group>"; };
 		E26A63082170B73E00AA0AE2 /* Multiplications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26A630D2170B73E00AA0AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,19 +76,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B5B78867221AB64200421F66 /* Primes */ = {
+		B538AFD822366802008A6F94 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B5677941220D7D3E00FB49FD /* NextPrime.swift */,
-				B5B7886A221AB66E00421F66 /* NextPrime+PrimeChecker.swift */,
+				E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */,
+				E26A630D2170B73E00AA0AE2 /* ViewController.swift */,
+				E26A630F2170B73E00AA0AE2 /* Main.storyboard */,
+				E26A63122170B74000AA0AE2 /* Assets.xcassets */,
+				E26A63142170B74000AA0AE2 /* LaunchScreen.storyboard */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B538AFD922366877008A6F94 /* Lesson1_2 */ = {
+			isa = PBXGroup;
+			children = (
+				B538AFDB2236699B008A6F94 /* Primes */,
+				B5677943220D7F1800FB49FD /* EnumsWrapper.swift */,
+				B5677947220D819F00FB49FD /* StringMatcher.swift */,
+				B560444E21E6509F00105D14 /* FizzBuzz.swift */,
+			);
+			path = Lesson1_2;
+			sourceTree = "<group>";
+		};
+		B538AFDA22366885008A6F94 /* Lesson1_2 */ = {
+			isa = PBXGroup;
+			children = (
+				B5677949220D822C00FB49FD /* StringMatcherTests.swift */,
+				B560444C21E6509600105D14 /* FizzBuzzTests.swift */,
+				B567794D220D857C00FB49FD /* ContainersTests.swift */,
+				B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */,
+			);
+			path = Lesson1_2;
+			sourceTree = "<group>";
+		};
+		B538AFDB2236699B008A6F94 /* Primes */ = {
+			isa = PBXGroup;
+			children = (
+				B538AFDC2236699B008A6F94 /* NextPrime.swift */,
+				B538AFDD2236699B008A6F94 /* NextPrime+PrimeChecker.swift */,
 			);
 			path = Primes;
+			sourceTree = "<group>";
+		};
+		B538AFE022366BF5008A6F94 /* Lesson3 */ = {
+			isa = PBXGroup;
+			children = (
+				B538AFE122366C0A008A6F94 /* Containers.swift */,
+			);
+			path = Lesson3;
 			sourceTree = "<group>";
 		};
 		E26A62FF2170B73D00AA0AE2 = {
 			isa = PBXGroup;
 			children = (
 				E26A630A2170B73E00AA0AE2 /* Multiplications */,
+				B538AFE022366BF5008A6F94 /* Lesson3 */,
 				E26A63222170B86F00AA0AE2 /* MultiplicationsTests */,
 				E26A63092170B73E00AA0AE2 /* Products */,
 			);
@@ -106,17 +149,9 @@
 		E26A630A2170B73E00AA0AE2 /* Multiplications */ = {
 			isa = PBXGroup;
 			children = (
-				E26A630B2170B73E00AA0AE2 /* AppDelegate.swift */,
-				B5677943220D7F1800FB49FD /* EnumsWrapper.swift */,
-				B5677947220D819F00FB49FD /* StringMatcher.swift */,
-				B560444E21E6509F00105D14 /* FizzBuzz.swift */,
-				B567794B220D84F800FB49FD /* Containers.swift */,
-				B5B78867221AB64200421F66 /* Primes */,
-				E26A630D2170B73E00AA0AE2 /* ViewController.swift */,
-				E26A630F2170B73E00AA0AE2 /* Main.storyboard */,
-				E26A63122170B74000AA0AE2 /* Assets.xcassets */,
-				E26A63142170B74000AA0AE2 /* LaunchScreen.storyboard */,
 				E26A63172170B74000AA0AE2 /* Info.plist */,
+				B538AFD822366802008A6F94 /* Core */,
+				B538AFD922366877008A6F94 /* Lesson1_2 */,
 			);
 			path = Multiplications;
 			sourceTree = "<group>";
@@ -125,10 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				B5677945220D800600FB49FD /* EnumsWrapperTests.swift */,
-				B5677949220D822C00FB49FD /* StringMatcherTests.swift */,
-				B560444C21E6509600105D14 /* FizzBuzzTests.swift */,
-				B567794D220D857C00FB49FD /* ContainersTests.swift */,
-				B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */,
+				B538AFDA22366885008A6F94 /* Lesson1_2 */,
 				E26A63252170B86F00AA0AE2 /* Info.plist */,
 			);
 			path = MultiplicationsTests;
@@ -235,13 +267,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B7886B221AB66E00421F66 /* NextPrime+PrimeChecker.swift in Sources */,
+				B538AFDE2236699B008A6F94 /* NextPrime.swift in Sources */,
+				B538AFE222366C0A008A6F94 /* Containers.swift in Sources */,
+				B538AFDF2236699B008A6F94 /* NextPrime+PrimeChecker.swift in Sources */,
 				E26A630E2170B73E00AA0AE2 /* ViewController.swift in Sources */,
 				E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */,
 				B5677944220D7F1800FB49FD /* EnumsWrapper.swift in Sources */,
-				B5677942220D7D3E00FB49FD /* NextPrime.swift in Sources */,
 				B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */,
-				B567794C220D84F800FB49FD /* Containers.swift in Sources */,
 				B5677948220D819F00FB49FD /* StringMatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

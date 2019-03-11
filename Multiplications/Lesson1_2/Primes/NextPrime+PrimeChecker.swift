@@ -8,9 +8,18 @@ import Foundation
 
 extension NextPrime {
 
-    func isPrime(for value: Int) -> Bool {
+    func calculateIfIsPrime(for value: Int) -> Bool {
         let doubleValue = Double(value)
         let maximumValue = Int(sqrt(doubleValue))
+        if value < 2 {
+            return false
+        }
+        if value == 2 {
+            return true
+        }
+        if value == 3 {
+            return true
+        }
         for potentialDivider in 2...maximumValue {
             if value % potentialDivider == 0 {
                 return false
