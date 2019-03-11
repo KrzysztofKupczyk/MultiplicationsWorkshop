@@ -7,6 +7,7 @@
 import Foundation
 
 final class WorkerInfo {
+    
     enum Position {
         case qaDeveloper
         case iosDeveloper

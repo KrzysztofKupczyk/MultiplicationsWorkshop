@@ -12,7 +12,7 @@
 		B538AFE222366C0A008A6F94 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE122366C0A008A6F94 /* Containers.swift */; };
 		B538AFE422366D46008A6F94 /* WorkerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE322366D46008A6F94 /* WorkerInfo.swift */; };
 		B538AFE722366EDD008A6F94 /* WorkerInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE622366EDD008A6F94 /* WorkerInfoTests.swift */; };
-		B538AFEA22366FE5008A6F94 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE822366F9D008A6F94 /* Team.swift */; };
+		B538AFEA22366FE5008A6F94 /* TeamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE822366F9D008A6F94 /* TeamInfo.swift */; };
 		B560444D21E6509600105D14 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444C21E6509600105D14 /* FizzBuzzTests.swift */; };
 		B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560444E21E6509F00105D14 /* FizzBuzz.swift */; };
 		B5677940220D7CF100FB49FD /* NextPrimeValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */; };
@@ -44,7 +44,7 @@
 		B538AFE122366C0A008A6F94 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
 		B538AFE322366D46008A6F94 /* WorkerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerInfo.swift; sourceTree = "<group>"; };
 		B538AFE622366EDD008A6F94 /* WorkerInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerInfoTests.swift; sourceTree = "<group>"; };
-		B538AFE822366F9D008A6F94 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		B538AFE822366F9D008A6F94 /* TeamInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfo.swift; sourceTree = "<group>"; };
 		B560444C21E6509600105D14 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		B560444E21E6509F00105D14 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 		B567793F220D7CF100FB49FD /* NextPrimeValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPrimeValueTests.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				B538AFE322366D46008A6F94 /* WorkerInfo.swift */,
-				B538AFE822366F9D008A6F94 /* Team.swift */,
+				B538AFE822366F9D008A6F94 /* TeamInfo.swift */,
 			);
 			path = Lesson3;
 			sourceTree = "<group>";
@@ -147,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				E26A630A2170B73E00AA0AE2 /* Multiplications */,
-				B538AFE022366BF5008A6F94 /* Lesson3 */,
 				E26A63222170B86F00AA0AE2 /* MultiplicationsTests */,
 				E26A63092170B73E00AA0AE2 /* Products */,
 			);
@@ -168,6 +167,7 @@
 				E26A63172170B74000AA0AE2 /* Info.plist */,
 				B538AFD822366802008A6F94 /* Core */,
 				B538AFD922366877008A6F94 /* Lesson1_2 */,
+				B538AFE022366BF5008A6F94 /* Lesson3 */,
 			);
 			path = Multiplications;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 				B5677944220D7F1800FB49FD /* EnumsWrapper.swift in Sources */,
 				B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */,
 				B538AFE422366D46008A6F94 /* WorkerInfo.swift in Sources */,
-				B538AFEA22366FE5008A6F94 /* Team.swift in Sources */,
+				B538AFEA22366FE5008A6F94 /* TeamInfo.swift in Sources */,
 				B5677948220D819F00FB49FD /* StringMatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
