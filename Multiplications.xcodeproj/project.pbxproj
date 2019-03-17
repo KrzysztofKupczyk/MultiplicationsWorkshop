@@ -136,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B538AFE322366D46008A6F94 /* WorkerInfo.swift */,
+				B538AFE822366F9D008A6F94 /* TeamInfo.swift */,
 			);
 			path = Lesson3;
 			sourceTree = "<group>";
@@ -192,6 +193,7 @@
 				E26A63172170B74000AA0AE2 /* Info.plist */,
 				B538AFD822366802008A6F94 /* Core */,
 				B538AFD922366877008A6F94 /* Lesson1_2 */,
+				B538AFE022366BF5008A6F94 /* Lesson3 */,
 			);
 			path = Multiplications;
 			sourceTree = "<group>";
@@ -318,6 +320,7 @@
 				B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */,
 				B538AFE422366D46008A6F94 /* WorkerInfo.swift in Sources */,
 				B5C8E9A3223EC87B003DBC4E /* AirportShortcutDictionary.swift in Sources */,
+				B538AFEA22366FE5008A6F94 /* TeamInfo.swift in Sources */,
 				B538AFEA22366FE5008A6F94 /* TeamInfo.swift in Sources */,
 				B5677948220D819F00FB49FD /* StringMatcher.swift in Sources */,
 			);
