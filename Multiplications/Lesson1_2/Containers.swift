@@ -6,7 +6,7 @@
 
 import Foundation
 
-class Containers {
+final class Containers {
     var valueSet = Set<String>()
     func save(value: String) {
         valueSet.insert(value)

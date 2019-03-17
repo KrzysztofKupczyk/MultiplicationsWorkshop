@@ -4,7 +4,7 @@
 //
 	
 
-import Foundation
+import UIKit
 
 final class WorkerInfo {
     enum Position {
@@ -15,11 +15,14 @@ final class WorkerInfo {
         case productOwner
     }
 
+    private let oneYear = 3600 * 24 * 365.25
+
     let firstName: String?
     let lastName: String?
     let birthDate: Date?
     let workFloor: UInt8
     let position: Position?
+
 
     init () {
         firstName = nil
@@ -35,5 +38,14 @@ final class WorkerInfo {
 
     var needAccessToRepository: Bool {
         return false
+    }
+
+    func age(forDate date: Date) -> CGFloat? {
+        guard let birthDate = birthDate else {
+            return nil
+        }
+
+        let value = date.timeIntervalSince(birthDate) / oneYear
+        return CGFloat(value)
     }
 }
