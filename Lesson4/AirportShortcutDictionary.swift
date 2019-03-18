@@ -32,6 +32,15 @@ final class AirportShortcutDictionary {
             }
         }
 
+        for key in dictionary.keys {
+        }
+
+        let filteredValues = dictionary
+            .values
+            .filter {
+                entry in
+                return entry == "DDDD"
+        }
     }
 
     private var dictionary = Dictionary<String, String>()
@@ -91,12 +100,23 @@ final class AirportShortcutDictionary {
 
     // Returns all airport shortcuts starts with specific character
     func airportShortcutsWith(firstCharacter character: Character) -> [String] {
-        return ["RNM"]
+        var result: [String] = []
+        for (key, _) in dictionary {
+            if key.first == character {
+                result.append(key)
+            }
+        }
+        return result
     }
 
     // Returns all airports names starts with specific character
     func airportNamesWith(firstCharacter character: Character) -> [String] {
-        return ["Random name"]
+        return dictionary
+            .values
+            .filter {
+                name in
+                return name.first == character
+        }
     }
 
 }
