@@ -12,14 +12,14 @@ final class AirportShortcutDictionaryTests: XCTestCase {
         let airportShortcutDictionary = AirportShortcutDictionary()
         XCTAssertTrue(airportShortcutDictionary.isDictionaryEmpty)
 
-        airportShortcutDictionary.add(aiportShort: "ZYAS", fullName: "Anshan Teng")
+        airportShortcutDictionary.add(airportShort: "ZYAS", fullName: "Anshan Teng")
         XCTAssertFalse(airportShortcutDictionary.isDictionaryEmpty)
 
-        let result = airportShortcutDictionary.remove(aiportShort: "random")
+        let result = airportShortcutDictionary.remove(airportShort: "random")
         XCTAssertFalse(airportShortcutDictionary.isDictionaryEmpty)
         XCTAssertFalse(result)
 
-        let result2 = airportShortcutDictionary.remove(aiportShort: "ZYAS")
+        let result2 = airportShortcutDictionary.remove(airportShort: "ZYAS")
         XCTAssertTrue(airportShortcutDictionary.isDictionaryEmpty)
         XCTAssertTrue(result2)
     }
@@ -29,14 +29,14 @@ final class AirportShortcutDictionaryTests: XCTestCase {
         var containsValue = airportShortcuts.contains(airportName: "Anshan Teng")
         XCTAssertFalse(containsValue)
 
-        airportShortcuts.add(aiportShort: "ZYAS", fullName: "Anshan Teng")
+        airportShortcuts.add(airportShort: "ZYAS", fullName: "Anshan Teng")
         containsValue = airportShortcuts.contains(airportName: "Anshan Teng")
         XCTAssertTrue(containsValue)
     }
 
     func testContaintsAndSave2() {
         let airportShortcuts = AirportShortcutDictionary()
-        var addingResult = airportShortcuts.safeAdd(aiportShort: "ZWAK", fullName: "Aksu Airport")
+        var addingResult = airportShortcuts.safeAdd(airportShort: "ZWAK", fullName: "Aksu Airport")
         XCTAssertTrue(addingResult)
 
         var containsValue = airportShortcuts.contains(airportName: "Anshan Teng")
@@ -46,7 +46,7 @@ final class AirportShortcutDictionaryTests: XCTestCase {
         XCTAssertTrue(containsValue)
 
 
-        addingResult = airportShortcuts.safeAdd(aiportShort: "ZWAK", fullName: "Aksu Airport")
+        addingResult = airportShortcuts.safeAdd(airportShort: "ZWAK", fullName: "Aksu Airport")
         XCTAssertFalse(addingResult)
         containsValue = airportShortcuts.contains(airportName: "Anshan Teng")
         XCTAssertFalse(containsValue)
@@ -57,14 +57,14 @@ final class AirportShortcutDictionaryTests: XCTestCase {
         var containsValue = airportShortcuts.contains(airportShort: "ZYAS")
         XCTAssertFalse(containsValue)
 
-        airportShortcuts.add(aiportShort: "ZYAS", fullName: "Anshan Teng")
+        airportShortcuts.add(airportShort: "ZYAS", fullName: "Anshan Teng")
         containsValue = airportShortcuts.contains(airportShort: "ZYAS")
         XCTAssertTrue(containsValue)
     }
 
     func testRemoveAndContains() {
         let airportShortcuts = AirportShortcutDictionary()
-        airportShortcuts.add(aiportShort: "ZUHY", fullName: "Hongyuan Airport")
+        airportShortcuts.add(airportShort: "ZUHY", fullName: "Hongyuan Airport")
         var containsResult = airportShortcuts.contains(airportName: "Hongyuan Airport")
         XCTAssertTrue(containsResult)
 
@@ -82,16 +82,16 @@ final class AirportShortcutDictionaryTests: XCTestCase {
 
     func testRemoveAndContains2() {
         let airportShortcuts = AirportShortcutDictionary()
-        airportShortcuts.add(aiportShort: "ZUHY", fullName: "Hongyuan Airport")
+        airportShortcuts.add(airportShort: "ZUHY", fullName: "Hongyuan Airport")
         var containsResult = airportShortcuts.contains(airportName: "Hongyuan Airport")
         XCTAssertTrue(containsResult)
 
-        var removeResult = airportShortcuts.remove(aiportShort: "ZZ")
+        var removeResult = airportShortcuts.remove(airportShort: "ZZ")
         containsResult = airportShortcuts.contains(airportName: "Hongyuan Airport")
         XCTAssertTrue(containsResult)
         XCTAssertFalse(removeResult)
 
-        removeResult = airportShortcuts.remove(aiportShort: "ZUHY")
+        removeResult = airportShortcuts.remove(airportShort: "ZUHY")
         containsResult = airportShortcuts.contains(airportName: "Hongyuan Airport")
         XCTAssertFalse(containsResult)
         XCTAssertTrue(removeResult)
@@ -100,32 +100,32 @@ final class AirportShortcutDictionaryTests: XCTestCase {
 
     func testAAA() {
         let airportShortcuts = AirportShortcutDictionary()
-        airportShortcuts.add(aiportShort: "ZYAS", fullName: "Anshan Teng")
-        airportShortcuts.add(aiportShort: "ZWAT", fullName: "Altay Airport")
-        airportShortcuts.add(aiportShort: "ZWAK", fullName: "Aksu Airport")
-        airportShortcuts.add(aiportShort: "ZUYI", fullName: "Xingyi Wanfenglin")
-        airportShortcuts.add(aiportShort: "ZUHY", fullName: "Hongyuan Airport")
-        airportShortcuts.add(aiportShort: "ZUAS", fullName: "Anshun Huangguoshu")
-        airportShortcuts.add(aiportShort: "ZSAQ", fullName: "Anqing Tianzhushan")
-        airportShortcuts.add(aiportShort: "ZMAH", fullName: "Arvaikheer Airport")
-        airportShortcuts.add(aiportShort: "ZLAK", fullName: "Ankang Wulipu")
-        airportShortcuts.add(aiportShort: "ZHAY", fullName: "Anyang Airport")
-        airportShortcuts.add(aiportShort: "ZGBS", fullName: "Baise Bama")
-        airportShortcuts.add(aiportShort: "YPAD", fullName: "Adelaide Airport")
-        airportShortcuts.add(aiportShort: "YNPE", fullName: "Northern Peninsula")
-        airportShortcuts.add(aiportShort: "YMAY", fullName: "Albury Airport")
-        airportShortcuts.add(aiportShort: "YMAV", fullName: "Avalon Airport")
-        airportShortcuts.add(aiportShort: "YBAS", fullName: "Alice Springs")
-        airportShortcuts.add(aiportShort: "YAYR", fullName: "Ayr Airport")
-        airportShortcuts.add(aiportShort: "YAYE", fullName: "Ayers Rock")
-        airportShortcuts.add(aiportShort: "YAUV", fullName: "Auvergne Airport")
-        airportShortcuts.add(aiportShort: "YAUR", fullName: "Aurukun Airport")
-        airportShortcuts.add(aiportShort: "YARY", fullName: "Arrabury Airport")
-        airportShortcuts.add(aiportShort: "YARM", fullName: "Armidale Airport")
-        airportShortcuts.add(aiportShort: "YARA", fullName: "Ararat Airport")
-        airportShortcuts.add(aiportShort: "YAPH", fullName: "Alpha Airport")
-        airportShortcuts.add(aiportShort: "YAMT", fullName: "Amata Airport")
-        airportShortcuts.add(aiportShort: "WAMK", fullName: "Andamooka Airport")
+        airportShortcuts.add(airportShort: "ZYAS", fullName: "Anshan Teng")
+        airportShortcuts.add(airportShort: "ZWAT", fullName: "Altay Airport")
+        airportShortcuts.add(airportShort: "ZWAK", fullName: "Aksu Airport")
+        airportShortcuts.add(airportShort: "ZUYI", fullName: "Xingyi Wanfenglin")
+        airportShortcuts.add(airportShort: "ZUHY", fullName: "Hongyuan Airport")
+        airportShortcuts.add(airportShort: "ZUAS", fullName: "Anshun Huangguoshu")
+        airportShortcuts.add(airportShort: "ZSAQ", fullName: "Anqing Tianzhushan")
+        airportShortcuts.add(airportShort: "ZMAH", fullName: "Arvaikheer Airport")
+        airportShortcuts.add(airportShort: "ZLAK", fullName: "Ankang Wulipu")
+        airportShortcuts.add(airportShort: "ZHAY", fullName: "Anyang Airport")
+        airportShortcuts.add(airportShort: "ZGBS", fullName: "Baise Bama")
+        airportShortcuts.add(airportShort: "YPAD", fullName: "Adelaide Airport")
+        airportShortcuts.add(airportShort: "YNPE", fullName: "Northern Peninsula")
+        airportShortcuts.add(airportShort: "YMAY", fullName: "Albury Airport")
+        airportShortcuts.add(airportShort: "YMAV", fullName: "Avalon Airport")
+        airportShortcuts.add(airportShort: "YBAS", fullName: "Alice Springs")
+        airportShortcuts.add(airportShort: "YAYR", fullName: "Ayr Airport")
+        airportShortcuts.add(airportShort: "YAYE", fullName: "Ayers Rock")
+        airportShortcuts.add(airportShort: "YAUV", fullName: "Auvergne Airport")
+        airportShortcuts.add(airportShort: "YAUR", fullName: "Aurukun Airport")
+        airportShortcuts.add(airportShort: "YARY", fullName: "Arrabury Airport")
+        airportShortcuts.add(airportShort: "YARM", fullName: "Armidale Airport")
+        airportShortcuts.add(airportShort: "YARA", fullName: "Ararat Airport")
+        airportShortcuts.add(airportShort: "YAPH", fullName: "Alpha Airport")
+        airportShortcuts.add(airportShort: "YAMT", fullName: "Amata Airport")
+        airportShortcuts.add(airportShort: "WAMK", fullName: "Andamooka Airport")
 
         var names = airportShortcuts.airportNamesWith(firstCharacter: "A")
         XCTAssertEqual(names.count, 22)

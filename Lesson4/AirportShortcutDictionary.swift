@@ -20,8 +20,8 @@ final class AirportShortcutDictionary {
 
         dictionary["Key"] = "new value"
 
-        let arrayOfValues = dictionary.keys
-        for airportName in arrayOfValues {
+        let arrayOfKeys = dictionary.keys
+        for airportName in arrayOfKeys {
             // Do something here.
         }
 
@@ -61,13 +61,13 @@ final class AirportShortcutDictionary {
         return false
     }
 
-    func add(aiportShort: String, fullName: String) {
+    func add(airportShort: String, fullName: String) {
 
     }
 
     // Only adds new airport shortcut if it doesn't exist yet.
     // return FALSE
-    func safeAdd(aiportShort: String, fullName: String) -> Bool {
+    func safeAdd(airportShort: String, fullName: String) -> Bool {
         return true
     }
 
@@ -79,7 +79,7 @@ final class AirportShortcutDictionary {
         return true
     }
 
-    func remove(aiportShort: String) -> Bool {
+    func remove(airportShort: String) -> Bool {
         return true
     }
 
