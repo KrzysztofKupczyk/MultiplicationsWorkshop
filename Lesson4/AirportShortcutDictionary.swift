@@ -32,7 +32,7 @@ final class AirportShortcutDictionary {
             }
         }
 
-        for key in dictionary.keys {
+        for (key, value) in dictionary {
         }
 
         let filteredValues = dictionary
@@ -51,72 +51,43 @@ final class AirportShortcutDictionary {
 
     // If shortcut dictionary is empty, then return true.
     var isDictionaryEmpty: Bool {
-        return dictionary.isEmpty
+        return false
     }
 
     func add(aiportShort: String, fullName: String) {
-        dictionary[aiportShort] = fullName
+
     }
 
     // Only adds new airport shortcut if it doesn't exist yet.
     // return FALSE
     func safeAdd(aiportShort: String, fullName: String) -> Bool {
-        if dictionary[aiportShort] != nil {
-            return false
-        }
-        dictionary[aiportShort] = fullName
         return true
     }
 
     func contains(airportShort: String) -> Bool {
-        return dictionary.contains(where: { (key, value) -> Bool in
-            return airportShort == key
-        })
+        return true
     }
 
     func contains(airportName: String) -> Bool {
-        return dictionary.contains(where: { (key, value) -> Bool in
-            return airportName == value
-        })
+        return true
     }
 
     func remove(aiportShort: String) -> Bool {
-        if dictionary[aiportShort] != nil {
-            dictionary.removeValue(forKey: aiportShort)
-            return true
-        }
-        return false
+        return true
     }
 
     func remove(airportName: String) -> Bool {
-        for key in dictionary.keys {
-            if dictionary[key] == airportName {
-                dictionary.removeValue(forKey: key)
-                return true
-            }
-        }
-        return false
+        return true
     }
 
     // Returns all airport shortcuts starts with specific character
     func airportShortcutsWith(firstCharacter character: Character) -> [String] {
-        var result: [String] = []
-        for (key, _) in dictionary {
-            if key.first == character {
-                result.append(key)
-            }
-        }
-        return result
+        return []
     }
 
     // Returns all airports names starts with specific character
     func airportNamesWith(firstCharacter character: Character) -> [String] {
-        return dictionary
-            .values
-            .filter {
-                name in
-                return name.first == character
-        }
+        return []
     }
 
 }
