@@ -17,7 +17,10 @@ final class TeamInfoTests: XCTestCase {
     }
 
     func testFullName() {
-        // Write tests that check if user "Jan" Kowalski" has "Jan Kowalski as output.
+        let teamInfoList = [TeamInfo]()
+        let teamInfoList2: [TeamInfo] = []
+        let teamInfoList3 = Array<TeamInfo>()
+
     }
 
     func testIsHasDeveloper() {

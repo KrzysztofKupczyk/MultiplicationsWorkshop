@@ -32,8 +32,15 @@ final class AirportShortcutDictionary {
             }
         }
 
+        var array = [String]()
+        array.append("dddd")
+
         for (key, value) in dictionary {
+            if value == "Katowice" {
+                array.append(key)
+            }
         }
+
 
         let filteredValues = dictionary
             .values

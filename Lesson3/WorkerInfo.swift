@@ -10,6 +10,7 @@ final class WorkerInfo {
     enum Position {
         case qaDeveloper
         case iosDeveloper
+        case tvosDeveloper
         case scrumHamster
         case designer
         case productOwner
