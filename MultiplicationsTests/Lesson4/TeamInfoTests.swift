@@ -20,7 +20,6 @@ final class TeamInfoTests: XCTestCase {
         let teamInfoList = [TeamInfo]()
         let teamInfoList2: [TeamInfo] = []
         let teamInfoList3 = Array<TeamInfo>()
-
     }
 
     func testIsHasDeveloper() {
