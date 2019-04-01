@@ -2,7 +2,7 @@
 //  Created by Rafal Szastok on 17/03/2019
 //  Copyright © 2017 Perform. All rights reserved.
 //
-	
+
 
 import Foundation
 
@@ -58,43 +58,93 @@ final class AirportShortcutDictionary {
 
     // If shortcut dictionary is empty, then return true.
     var isDictionaryEmpty: Bool {
-        return false
+        return dictionary.isEmpty
     }
 
     func add(airportShort: String, fullName: String) {
-
+        dictionary[airportShort] = fullName
     }
 
     // Only adds new airport shortcut if it doesn't exist yet.
     // return FALSE
     func safeAdd(airportShort: String, fullName: String) -> Bool {
-        return true
+        let tmp = dictionary[airportShort]
+        if tmp == nil {
+            dictionary[airportShort] = fullName
+            return true
+        }
+        return false
+
     }
 
     func contains(airportShort: String) -> Bool {
-        return true
+        let tmp = dictionary[airportShort]
+        return tmp != nil
+
     }
 
     func contains(airportName: String) -> Bool {
-        return true
+        //        let closure: ((String, String) -> Bool) = { (key: String, value: String) -> Bool in
+        //         return value == airportName
+        //
+        //        }
+        //        let tmp = dictionary.contains(where: closure)
+        //        return tmp
+        for (_, value) in dictionary {
+            if value == airportName {
+                return true
+            }
+
+        }
+        return false
     }
 
     func remove(airportShort: String) -> Bool {
+        let tmp = dictionary[airportShort]
+        if tmp == nil {
+            return false
+        }
+        dictionary[airportShort] = nil
         return true
     }
 
     func remove(airportName: String) -> Bool {
-        return true
+        var foundValueInDictionary = false
+        for (key, value) in dictionary {
+            if value == airportName {
+                dictionary[key] = nil
+                foundValueInDictionary = true
+            }
+
+        }
+        return foundValueInDictionary
     }
 
     // Returns all airport shortcuts starts with specific character
     func airportShortcutsWith(firstCharacter character: Character) -> [String] {
-        return []
+        var shortcuts = [String]()
+        for airportPair in dictionary {
+            if airportPair.key.first == character {
+                shortcuts.append(airportPair.key)
+
+            }
+
+        }
+        return shortcuts
     }
 
     // Returns all airports names starts with specific character
     func airportNamesWith(firstCharacter character: Character) -> [String] {
-        return []
+        var names = [String]()
+        for airportPair in dictionary {
+            if airportPair.value.first == character {
+                names.append(airportPair.value)
+
+            }
+
+        }
+        return names
+    }
     }
 
-}
+
