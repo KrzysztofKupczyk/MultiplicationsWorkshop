@@ -18,19 +18,23 @@ final class WorkerInfo {
 
     private let oneYear = 3600 * 24 * 365.25
 
-    let firstName: String?
+    let firstName: String
     let lastName: String?
     let birthDate: Date?
     let workFloor: UInt8
     let position: Position?
 
 
-    init () {
-        firstName = nil
-        lastName = nil
-        birthDate = nil
-        workFloor = 6
-        position = nil
+    init (firstName: String,
+          lastName: String?,
+          birthDate: Date?,
+          workFloor: UInt8,
+          position: Position) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.birthDate = birthDate
+        self.workFloor = workFloor
+        self.position = position
     }
 
     var fullName: String? {

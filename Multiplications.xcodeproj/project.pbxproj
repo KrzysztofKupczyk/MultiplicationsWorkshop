@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B535102E22456A9C003DBC34 /* TeamsGeneator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535102D22456A9C003DBC34 /* TeamsGeneator.swift */; };
 		B538AFDE2236699B008A6F94 /* NextPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFDC2236699B008A6F94 /* NextPrime.swift */; };
 		B538AFDF2236699B008A6F94 /* NextPrime+PrimeChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFDD2236699B008A6F94 /* NextPrime+PrimeChecker.swift */; };
 		B538AFE222366C0A008A6F94 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AFE122366C0A008A6F94 /* Containers.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B535102D22456A9C003DBC34 /* TeamsGeneator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsGeneator.swift; sourceTree = "<group>"; };
 		B538AFDC2236699B008A6F94 /* NextPrime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextPrime.swift; sourceTree = "<group>"; };
 		B538AFDD2236699B008A6F94 /* NextPrime+PrimeChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextPrime+PrimeChecker.swift"; sourceTree = "<group>"; };
 		B538AFE122366C0A008A6F94 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
@@ -136,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				B538AFE322366D46008A6F94 /* WorkerInfo.swift */,
-				B538AFE822366F9D008A6F94 /* TeamInfo.swift */,
 			);
 			path = Lesson3;
 			sourceTree = "<group>";
@@ -153,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				B5C8E9A2223EC87B003DBC4E /* AirportShortcutDictionary.swift */,
+				B535102D22456A9C003DBC34 /* TeamsGeneator.swift */,
 				B538AFE822366F9D008A6F94 /* TeamInfo.swift */,
 			);
 			path = Lesson4;
@@ -193,7 +195,6 @@
 				E26A63172170B74000AA0AE2 /* Info.plist */,
 				B538AFD822366802008A6F94 /* Core */,
 				B538AFD922366877008A6F94 /* Lesson1_2 */,
-				B538AFE022366BF5008A6F94 /* Lesson3 */,
 			);
 			path = Multiplications;
 			sourceTree = "<group>";
@@ -318,6 +319,7 @@
 				E26A630C2170B73E00AA0AE2 /* AppDelegate.swift in Sources */,
 				B5677944220D7F1800FB49FD /* EnumsWrapper.swift in Sources */,
 				B560444F21E6509F00105D14 /* FizzBuzz.swift in Sources */,
+				B535102E22456A9C003DBC34 /* TeamsGeneator.swift in Sources */,
 				B538AFE422366D46008A6F94 /* WorkerInfo.swift in Sources */,
 				B5C8E9A3223EC87B003DBC4E /* AirportShortcutDictionary.swift in Sources */,
 				B538AFEA22366FE5008A6F94 /* TeamInfo.swift in Sources */,
