@@ -3,11 +3,10 @@
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
-import XCTest
 @testable import Multiplications
+import XCTest
 
 final class NextPrimeValueTests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }

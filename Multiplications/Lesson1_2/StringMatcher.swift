@@ -3,7 +3,6 @@
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
-
 import Foundation
 
 enum GREYContentEdge: String {
@@ -34,7 +33,5 @@ final class StringMatcher {
 
     static func checkIf(string: String, containsContentEdge contentEdge: GREYContentEdge) -> Bool {
         return string.contains(contentEdge.rawValue)
-        
     }
-
 }

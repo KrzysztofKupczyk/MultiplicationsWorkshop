@@ -9,7 +9,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,7 +17,6 @@ final class ViewController: UIViewController {
         case favouriteCell(String)
         case favouriteReminderButton(String)
     }
-
 }
 
 public protocol Identifiable {
@@ -28,7 +26,6 @@ public protocol Identifiable {
 }
 
 extension Identifiable {
-
     public var identifier: String {
         return String(describing: self)
     }

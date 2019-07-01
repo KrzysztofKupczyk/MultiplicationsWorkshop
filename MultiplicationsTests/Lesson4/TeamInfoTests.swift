@@ -3,11 +3,10 @@
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
-import XCTest
 @testable import Multiplications
+import XCTest
 
 final class TeamInfoTests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -26,5 +25,4 @@ final class TeamInfoTests: XCTestCase {
         // Write tests that check if for QA and developers userInfo returns TRUE.
         // For other cases it should return FALSE.
     }
-
 }

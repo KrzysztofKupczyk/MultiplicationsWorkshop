@@ -2,12 +2,10 @@
 //  Created by Rafal Szastok on 18/02/2019
 //  Copyright © 2017 Perform. All rights reserved.
 //
-	
 
 import Foundation
 
 extension NextPrime {
-
     func calculateIfIsPrime(for value: Int) -> Bool {
         let doubleValue = Double(value)
         let maximumValue = Int(sqrt(doubleValue))
@@ -20,7 +18,7 @@ extension NextPrime {
         if value == 3 {
             return true
         }
-        for potentialDivider in 2...maximumValue {
+        for potentialDivider in 2 ... maximumValue {
             if value % potentialDivider == 0 {
                 return false
             }

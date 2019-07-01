@@ -3,11 +3,10 @@
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
-import XCTest
 @testable import Multiplications
+import XCTest
 
 class ContainersTests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -22,5 +21,4 @@ class ContainersTests: XCTestCase {
         containers.save(value: "value1")
         XCTAssertTrue(containers.checkIfValueIsSaved(value: "value1"))
     }
-
 }

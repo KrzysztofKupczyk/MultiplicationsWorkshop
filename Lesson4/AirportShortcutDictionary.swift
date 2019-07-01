@@ -2,16 +2,13 @@
 //  Created by Rafal Szastok on 17/03/2019
 //  Copyright © 2017 Perform. All rights reserved.
 //
-	
 
 import Foundation
 
 final class AirportShortcutDictionary {
-
     // Methods you will have to use in dictionary (alphabetic order):
     // Method helper is only for workshop purposes. It shouldn't exist.
     private func helper() {
-
         let value = dictionary["Key"]
 
         let oldValue = dictionary.updateValue("new value", forKey: "Key")
@@ -41,60 +38,54 @@ final class AirportShortcutDictionary {
             }
         }
 
-
         let filteredValues = dictionary
             .values
             .filter {
                 entry in
-                return entry == "DDDD"
-        }
+                entry == "DDDD"
+            }
     }
 
     private var dictionary = Dictionary<String, String>()
 
-    init() {
-
-    }
+    init() {}
 
     // If shortcut dictionary is empty, then return true.
     var isDictionaryEmpty: Bool {
         return false
     }
 
-    func add(airportShort: String, fullName: String) {
-
-    }
+    func add(airportShort _: String, fullName _: String) {}
 
     // Only adds new airport shortcut if it doesn't exist yet.
     // return FALSE
-    func safeAdd(airportShort: String, fullName: String) -> Bool {
+    func safeAdd(airportShort _: String, fullName _: String) -> Bool {
         return true
     }
 
-    func contains(airportShort: String) -> Bool {
+    func contains(airportShort _: String) -> Bool {
         return true
     }
 
-    func contains(airportName: String) -> Bool {
+    func contains(airportName _: String) -> Bool {
         return true
     }
 
-    func remove(airportShort: String) -> Bool {
+    func remove(airportShort _: String) -> Bool {
         return true
     }
 
-    func remove(airportName: String) -> Bool {
+    func remove(airportName _: String) -> Bool {
         return true
     }
 
     // Returns all airport shortcuts starts with specific character
-    func airportShortcutsWith(firstCharacter character: Character) -> [String] {
+    func airportShortcutsWith(firstCharacter _: Character) -> [String] {
         return []
     }
 
     // Returns all airports names starts with specific character
-    func airportNamesWith(firstCharacter character: Character) -> [String] {
+    func airportNamesWith(firstCharacter _: Character) -> [String] {
         return []
     }
-
 }

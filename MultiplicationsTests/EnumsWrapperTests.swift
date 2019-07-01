@@ -3,11 +3,10 @@
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
-import XCTest
 @testable import Multiplications
+import XCTest
 
 class EnumWrapperTests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -28,5 +27,4 @@ class EnumWrapperTests: XCTestCase {
         XCTAssertFalse(enumsWrapper.isPlayable(tileType: TileType.upcoming))
         XCTAssertFalse(enumsWrapper.isPlayable(tileType: TileType.navigation))
     }
-
 }

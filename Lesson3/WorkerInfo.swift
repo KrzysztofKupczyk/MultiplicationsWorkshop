@@ -2,7 +2,6 @@
 //  Created by Rafal Szastok on 11/03/2019
 //  Copyright © 2017 Perform. All rights reserved.
 //
-	
 
 import UIKit
 
@@ -24,12 +23,11 @@ final class WorkerInfo {
     let workFloor: UInt8
     let position: Position?
 
-
-    init (firstName: String,
-          lastName: String?,
-          birthDate: Date?,
-          workFloor: UInt8,
-          position: Position) {
+    init(firstName: String,
+         lastName: String?,
+         birthDate: Date?,
+         workFloor: UInt8,
+         position: Position) {
         self.firstName = firstName
         self.lastName = lastName
         self.birthDate = birthDate

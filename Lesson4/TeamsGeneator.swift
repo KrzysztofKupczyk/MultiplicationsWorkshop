@@ -2,7 +2,6 @@
 //  Created by Rafal Szastok on 22/03/2019
 //  Copyright © 2017 Perform. All rights reserved.
 //
-	
 
 import Foundation
 
@@ -12,13 +11,13 @@ final class TeamsGenerator {
             return []
         }
 
-        return Array<Int>(0..<count)
-            .map { index in
+        return Array<Int>(0 ..< count)
+            .map { _ in
 
-                let oneYear = 365*24*3600
-                let years22 = UInt32(oneYear*22)
+                let oneYear = 365 * 24 * 3600
+                let years22 = UInt32(oneYear * 22)
                 let random22years = Int(arc4random_uniform(years22))
-                let timeInterval = TimeInterval(oneYear*18 + random22years)
+                let timeInterval = TimeInterval(oneYear * 18 + random22years)
                 let birthDate = Date().addingTimeInterval(-timeInterval)
 
                 return WorkerInfo(
@@ -26,8 +25,9 @@ final class TeamsGenerator {
                     lastName: "DAZNowicz",
                     birthDate: birthDate,
                     workFloor: UInt8(Int(arc4random_uniform(10))),
-                    position: WorkerInfo.Position.scrumHamster)
-        }
+                    position: WorkerInfo.Position.scrumHamster
+                )
+            }
     }
 
     private static func randomFirstName() -> String {
@@ -54,9 +54,10 @@ final class TeamsGenerator {
             "Natalia",
             "Łukasz",
             "Mujahid",
-            "Volodymyr"]
+            "Volodymyr",
+        ]
 
-        let index = Int(arc4random_uniform(UInt32(firstNames.count-1)))
+        let index = Int(arc4random_uniform(UInt32(firstNames.count - 1)))
         return firstNames[index]
     }
 }

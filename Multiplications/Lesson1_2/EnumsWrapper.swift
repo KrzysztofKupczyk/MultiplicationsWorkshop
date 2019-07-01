@@ -2,7 +2,6 @@
 //  Created by Rafal Szastok on 08/02/2019
 //  Copyright © 2017 Perform. All rights reserved.
 //
-	
 
 import Foundation
 
@@ -18,7 +17,6 @@ public enum TileType: String, CaseIterable {
 }
 
 final class EnumsWrapper {
-
     func isPlayable(tileType: TileType) -> Bool {
         switch tileType {
         case .catchup, .highlights:
@@ -34,11 +32,7 @@ final class EnumsWrapper {
         case .condensed:
             return true
         case .coaches:
-            return true 
-
-
+            return true
         }
-       
     }
-
 }

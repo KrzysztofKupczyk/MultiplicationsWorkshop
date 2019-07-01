@@ -3,11 +3,10 @@
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
-import XCTest
 @testable import Multiplications
+import XCTest
 
 final class AirportShortcutDictionaryTests: XCTestCase {
-
     func testIsEmptyAndRemove() {
         let airportShortcutDictionary = AirportShortcutDictionary()
         XCTAssertTrue(airportShortcutDictionary.isDictionaryEmpty)
@@ -45,7 +44,6 @@ final class AirportShortcutDictionaryTests: XCTestCase {
         containsValue = airportShortcuts.contains(airportName: "Aksu Airport")
         XCTAssertTrue(containsValue)
 
-
         addingResult = airportShortcuts.safeAdd(airportShort: "ZWAK", fullName: "Aksu Airport")
         XCTAssertFalse(addingResult)
         containsValue = airportShortcuts.contains(airportName: "Anshan Teng")
@@ -77,7 +75,6 @@ final class AirportShortcutDictionaryTests: XCTestCase {
         containsResult = airportShortcuts.contains(airportName: "Hongyuan Airport")
         XCTAssertFalse(containsResult)
         XCTAssertTrue(removeResult)
-
     }
 
     func testRemoveAndContains2() {
@@ -95,7 +92,6 @@ final class AirportShortcutDictionaryTests: XCTestCase {
         containsResult = airportShortcuts.contains(airportName: "Hongyuan Airport")
         XCTAssertFalse(containsResult)
         XCTAssertTrue(removeResult)
-
     }
 
     func testAAA() {
@@ -150,12 +146,10 @@ final class AirportShortcutDictionaryTests: XCTestCase {
 
         names = airportShortcuts.airportShortcutsWith(firstCharacter: "Q")
         XCTAssertEqual(names.count, 0)
-
-
     }
+
     func testIsHasDeveloper() {
         // Write tests that check if for QA and developers userInfo returns TRUE.
         // For other cases it should return FALSE.
     }
-
 }

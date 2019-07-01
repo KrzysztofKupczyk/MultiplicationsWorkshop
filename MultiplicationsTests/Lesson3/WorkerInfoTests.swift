@@ -3,9 +3,7 @@
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
-import XCTest
 @testable import Multiplications
+import XCTest
 
-final class WorkerInfoTests: XCTestCase {
-
-}
+final class WorkerInfoTests: XCTestCase {}

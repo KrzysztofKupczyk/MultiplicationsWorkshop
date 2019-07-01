@@ -2,21 +2,17 @@
 //  Created by Rafal Szastok on 11/03/2019
 //  Copyright © 2017 Perform. All rights reserved.
 //
-	
 
 import UIKit
 
 final class TeamInfo {
-
     private var members: [WorkerInfo] = []
 
     // How perfect scrum team should look like
     // Says how many people in specific position should it hold.
     private var perfectTeam = Dictionary<WorkerInfo.Position, Int>()
 
-
     private func helperMethod() {
-
         let minimumNumber = 2
         for position in perfectTeam.keys {
             let requiredPositionNumber = perfectTeam[position] ?? 0
@@ -25,21 +21,21 @@ final class TeamInfo {
             }
         }
 
-
         members.map {
             $0.birthDate
         }
     }
 
-    init () {
+    init() {
         perfectTeam = [
             .designer: 1,
             .iosDeveloper: 3,
             .qaDeveloper: 2,
             .scrumHamster: 1,
-            .productOwner: 1
+            .productOwner: 1,
         ]
     }
+
     var allWorkerNames: [String] {
         return []
     }

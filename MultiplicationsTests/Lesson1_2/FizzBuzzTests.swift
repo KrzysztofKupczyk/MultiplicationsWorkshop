@@ -3,11 +3,10 @@
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
-import XCTest
 @testable import Multiplications
+import XCTest
 
 class FizzBuzzTests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -37,7 +36,7 @@ class FizzBuzzTests: XCTestCase {
 
     func testFirst100Fizz() {
         let fizzBuzz = FizzBuzz()
-        for index in 1...100 {
+        for index in 1 ... 100 {
             let result = fizzBuzz.makeFizzBuzz(for: index)
 
             if index % 3 == 0 {
@@ -49,5 +48,4 @@ class FizzBuzzTests: XCTestCase {
             }
         }
     }
-
 }

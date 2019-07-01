@@ -3,11 +3,10 @@
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
-import XCTest
 @testable import Multiplications
+import XCTest
 
 class StringMatcherTests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -39,24 +38,29 @@ class StringMatcherTests: XCTestCase {
     func testContainingString() {
         XCTAssertTrue(StringMatcher.checkIf(
             string: "to jest bottom",
-            containsContentEdge: GREYContentEdge.bottom))
+            containsContentEdge: GREYContentEdge.bottom
+        ))
         XCTAssertFalse(StringMatcher.checkIf(
             string: "to jest ddd",
-            containsContentEdge: GREYContentEdge.bottom))
+            containsContentEdge: GREYContentEdge.bottom
+        ))
 
         XCTAssertTrue(StringMatcher.checkIf(
             string: "to jest top",
-            containsContentEdge: GREYContentEdge.top))
+            containsContentEdge: GREYContentEdge.top
+        ))
         XCTAssertFalse(StringMatcher.checkIf(
             string: "to jest ddd",
-            containsContentEdge: GREYContentEdge.top))
+            containsContentEdge: GREYContentEdge.top
+        ))
 
         XCTAssertTrue(StringMatcher.checkIf(
             string: "to jest left",
-            containsContentEdge: GREYContentEdge.left))
+            containsContentEdge: GREYContentEdge.left
+        ))
         XCTAssertFalse(StringMatcher.checkIf(
             string: "to jest ddd",
-            containsContentEdge: GREYContentEdge.left))
+            containsContentEdge: GREYContentEdge.left
+        ))
     }
-
 }
