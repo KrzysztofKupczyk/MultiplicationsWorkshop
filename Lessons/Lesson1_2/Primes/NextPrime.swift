@@ -6,6 +6,9 @@
 import Foundation
 
 final class NextPrime {
+
+    public init() {}
+
     func isPrime(value: Int) -> Bool {
         return calculateIfIsPrime(for: value)
     }

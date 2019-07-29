@@ -1,11 +1,30 @@
 //
-//  Created by Rafal Szastok on 18/02/2019
+//  Created by Rafal Szastok on 08/02/2019
 //  Copyright © 2017 Perform. All rights reserved.
 //
 
 import Foundation
 
-public final class PrimeChecker {
+public class NextPrime {
+
+    public init() {}
+
+    public func isPrime(value: Int) -> Bool {
+        return calculateIfIsPrime(for: value)
+    }
+
+    public func nextPrime(for value: Int) -> Int {
+        var potentialValue = value
+        while true {
+            potentialValue += 1
+            if calculateIfIsPrime(for: potentialValue) {
+                return potentialValue
+            }
+        }
+    }
+}
+
+public class PrimeChecker {
     static func calculateIfIsPrime(for value: Int) -> Bool {
         let doubleValue = Double(value)
         let maximumValue = Int(sqrt(doubleValue))
