@@ -40,7 +40,7 @@ public enum Language {
     }
 }
 
-enum SignupResult {
+public enum SignupResult {
     case signedUp
     case failed
     case noInternetConnection

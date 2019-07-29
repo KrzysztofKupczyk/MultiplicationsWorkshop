@@ -72,9 +72,9 @@ public typealias MockedRailAmout = [(region: Region, railAmount: Int)]
  2.7 Zadeklaruj typ (tzw. ClosureType) tak, żeby kod kompilował się.
  */
 
-//let closureName: (ClosureType -> Void) = { (region, country) in
+//let closureName: ClosureType = { (region, language) in
 //
 //    region.printRegion()
-//    country.printLanguageHello()
+//    language.printLanguageHello()
 //}
 

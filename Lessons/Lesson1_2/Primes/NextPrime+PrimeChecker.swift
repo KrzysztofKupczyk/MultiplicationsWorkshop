@@ -5,8 +5,8 @@
 
 import Foundation
 
-extension NextPrime {
-    func calculateIfIsPrime(for value: Int) -> Bool {
+final class PrimeChecker {
+    static func calculateIfIsPrime(for value: Int) -> Bool {
         let doubleValue = Double(value)
         let maximumValue = Int(sqrt(doubleValue))
         if value < 2 {
@@ -24,5 +24,11 @@ extension NextPrime {
             }
         }
         return true
+    }
+}
+
+extension NextPrime {
+    func calculateIfIsPrime(for value: Int) -> Bool {
+        return PrimeChecker.calculateIfIsPrime(for: value)
     }
 }

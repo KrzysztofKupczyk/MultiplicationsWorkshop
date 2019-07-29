@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5123F6C22EED3BC007B2B51 /* Typealias.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Typealias.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B5150DCA22C9F00E0066D7FC /* Test1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B535102D22456A9C003DBC34 /* TeamsGeneator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsGeneator.swift; sourceTree = "<group>"; };
 		B538AFDC2236699B008A6F94 /* NextPrime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextPrime.swift; sourceTree = "<group>"; };
@@ -91,12 +92,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5123F6922EED1B1007B2B51 /* Lesson6 */ = {
+			isa = PBXGroup;
+			children = (
+				B5123F6C22EED3BC007B2B51 /* Typealias.playground */,
+			);
+			path = Lesson6;
+			sourceTree = "<group>";
+		};
 		B5150DC322C9EE470066D7FC /* Lessons */ = {
 			isa = PBXGroup;
 			children = (
 				B538AFD922366877008A6F94 /* Lesson1_2 */,
 				B538AFE022366BF5008A6F94 /* Lesson3 */,
 				B5C8E9A1223EC7FF003DBC4E /* Lesson4 */,
+				B5123F6922EED1B1007B2B51 /* Lesson6 */,
 			);
 			path = Lessons;
 			sourceTree = "<group>";
