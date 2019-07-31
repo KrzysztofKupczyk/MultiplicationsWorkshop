@@ -68,28 +68,46 @@ print("----- outputPrimes -----")
 print(Set(outputPrimes))
 print("----- outputPrimes END -----")
 
-//.flatMap
-    //.compactMap
-    //.filter
-    //.reduce
-    //.map
 
-/* Zadania:
- # Zamienić deklaraję istniejących closure przy pomocy typealias OK
- # Przenieść cały kod do klasy w Sources OK
+/*
+ Cel workshopu:
+ - Praktyczne zastosowanie closurów
+ - Poznanie najpotrzebniejszych funkcji wysokiego rzędu: .flatMap, .compactMap, .filter, .reduce, .map
+ - Umiejętność manipulowania złożonymi strukturami oraz enumami
+ - Korzystanie z typealiasów
+ - Powtórzenie wiedzy nt. tablic, zbiorów, optionali, operacji na boolean
+ - Zaznajomienie się z playgroundami
+ - Dostępność obiektów (private, public etc.)
+
+ Zadania wykonane powyżej:
+ # Zamienić deklaraję istniejących closure przy pomocy typealias
+ # Kod klas, struktur i enumów powinien znaleźć się w adekwatnym z pliku Data lub Primes
  # Zrobić prosty enum w danej klasie do weryfikacji, czy to string, czy int
  # Zrobić typealias na danej klasie
  # Podzielić string na kolejne elementy
  # Przefiltrować wyniki inputString żeby wyświetlać jedynie Int
- # Sprawdzać, czy Int jest Prime
- # Wyświetlać "Number X is/isNot prime"
- # Przemapować string na  gathering green creature
- # Dodać case dla red creature
- # Przerobić sturktury na bardziej skalowalne:
+ # Uzyskać next prime dla wybranej liczby
+ # Przemapować string na gathering green creature
+ # Uzyskane primes posortować następnie usunąć duplikaty
+
+ Zadania do wykonania
+ HINT: najlepiej zróbcie duplikat tego playgound, przenieście do katalogu Lesson7 i usuńcie poprzednie
+ # Wyświetlać "Number X is/isNot prime" (lvl:1/5)
+ # Przemapować elementy na InputElement (lvl:3/5)
+ #### Podpowiedź: Najpierw mapujemy na int, potem na double, potem na green creatue
+ #### dopiero w przypadku, gdy mapowanie nie uda się na żadne powyżej, należy skorzystać z custom(value:)
+ # Wypisać jeden z komunikatów (X to wynik): IntegerVal: X, DoubleVal: X, CreatureGreen: X, Custom: X (lvl 2/5)
+
+ # Korzystając z tablicy (4/5)
+ let digitsAsStringArray = ["zero", "jeden", "dwa", "trzy", "cztery", "pięć", "sześć", "siedem", "osiem", "dziewięć"]
+ Wypisać na ekranie liczby "per cyfra". Przykład: 17 -> "jeden siedem"
+
+ # Przerobić sturktury na bardziej skalowalne: (5/5)
     - wszystkie stwory w jednym miejscu
     - podgrupa stworów dla danego decka
 
- * Póżniej:
- # Powiedzieć kilka zdań o silnej i słabej referencji.
+
+ Pomysły na kolejne workshopy:
+ - Przedstawić czym jest silna i słaba referencja
  */
 
