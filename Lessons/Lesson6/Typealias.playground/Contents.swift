@@ -89,25 +89,4 @@ print("----- outputPrimes END -----")
  # Uzyskać next prime dla wybranej liczby
  # Przemapować string na gathering green creature
  # Uzyskane primes posortować następnie usunąć duplikaty
-
- Zadania do wykonania
- HINT: najlepiej zróbcie duplikat tego playgound, przenieście do katalogu Lesson7 i usuńcie poprzednie
- # Wyświetlać "Number X is/isNot prime" (lvl:1/5)
- # Przemapować elementy na InputElement (lvl:3/5)
- #### Podpowiedź: Najpierw mapujemy na int, potem na double, potem na green creatue
- #### dopiero w przypadku, gdy mapowanie nie uda się na żadne powyżej, należy skorzystać z custom(value:)
- # Wypisać jeden z komunikatów (X to wynik): IntegerVal: X, DoubleVal: X, CreatureGreen: X, Custom: X (lvl 2/5)
-
- # Korzystając z tablicy (4/5)
- let digitsAsStringArray = ["zero", "jeden", "dwa", "trzy", "cztery", "pięć", "sześć", "siedem", "osiem", "dziewięć"]
- Wypisać na ekranie liczby "per cyfra". Przykład: 17 -> "jeden siedem"
-
- # Przerobić sturktury na bardziej skalowalne: (5/5)
-    - wszystkie stwory w jednym miejscu
-    - podgrupa stworów dla danego decka
-
-
- Pomysły na kolejne workshopy:
- - Przedstawić czym jest silna i słaba referencja
- */
-
+*/
